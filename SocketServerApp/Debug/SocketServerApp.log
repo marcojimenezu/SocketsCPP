@@ -1,0 +1,29 @@
+﻿Build started 05/06/2024 10:13:17 a. m..
+     1>Project "C:\Dev\Visual Studio 2013\SocketsCPP\SocketServerApp\SocketServerApp.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Dev\tools\vcpkg\installed\x86-windows\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _CONSOLE /D _LIB /D _MBCS /D _MBCS /D _QUEUE /D _CRT_SECURE_NO_WARNINGS /Gm /EHa /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt SocketServerApp.cpp
+         SocketServerApp.cpp
+     1>c:\dev\tools\vcpkg\installed\x86-windows\include\hiredis\sds.h(55): warning C4200: nonstandard extension used : zero-sized array in struct/union
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>c:\dev\tools\vcpkg\installed\x86-windows\include\hiredis\sds.h(61): warning C4200: nonstandard extension used : zero-sized array in struct/union
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>c:\dev\tools\vcpkg\installed\x86-windows\include\hiredis\sds.h(67): warning C4200: nonstandard extension used : zero-sized array in struct/union
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>c:\dev\tools\vcpkg\installed\x86-windows\include\hiredis\sds.h(73): warning C4200: nonstandard extension used : zero-sized array in struct/union
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>c:\dev\tools\vcpkg\installed\x86-windows\include\hiredis\sds.h(79): warning C4200: nonstandard extension used : zero-sized array in struct/union
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>c:\dev\tools\vcpkg\installed\x86-windows\include\hiredis\sds.h(105): warning C4244: 'return' : conversion from 'uint64_t' to 'size_t', possible loss of data
+     1>c:\dev\tools\vcpkg\installed\x86-windows\include\hiredis\sds.h(130): warning C4244: 'return' : conversion from 'uint64_t' to 'size_t', possible loss of data
+     1>c:\dev\tools\vcpkg\installed\x86-windows\include\hiredis\sds.h(198): warning C4244: 'return' : conversion from 'uint64_t' to 'size_t', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Dev\Visual Studio 2013\SocketsCPP\Debug\SocketServerApp.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Dev\tools\vcpkg\installed\x86-windows\lib" LIBCMTD.lib hiredis.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMTD.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Dev\Visual Studio 2013\SocketsCPP\Debug\SocketServerApp.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Dev\Visual Studio 2013\SocketsCPP\Debug\SocketServerApp.lib" /MACHINE:X86 Debug\ATMutex.obj
+         Debug\Logging.obj
+         Debug\SocketServerApp.obj
+         Debug\stdafx.obj
+         SocketServerApp.vcxproj -> C:\Dev\Visual Studio 2013\SocketsCPP\Debug\SocketServerApp.exe
+     1>Done Building Project "C:\Dev\Visual Studio 2013\SocketsCPP\SocketServerApp\SocketServerApp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.56

@@ -1,0 +1,9 @@
+#ifndef CONSTANTES_GENERALES_H
+#define CONSTANTES_GENERALES_H
+
+// Tamaños de datos
+const int MAX_BUFFER_SIZE = 1024;
+const int OPERACION_MESSAGE = 1;
+const int MAX_NUM_CLIENTES = 10;
+
+#endif // CONSTANTES_GENERALES_H
