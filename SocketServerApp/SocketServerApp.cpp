@@ -73,10 +73,10 @@ void HandleClient(SOCKET clientSocket) {
 
 int hiredisConnection(){
 	timeval timeout = { 60, 0 };
-	//redisContext* context = redisConnectWithTimeout("logstream.wasras.com", 6379, timeout); // Auris
+	redisContext* context = redisConnectWithTimeout("logstream.wasras.com", 6379, timeout); // Auris
 	//redisContext* context = redisConnectWithTimeout("172.25.25.19", 6379, timeout); // Auris
 	//redisContext* context = redisConnectWithTimeout("192.168.68.131", 6379, timeout); // Linux
-	redisContext* context = redisConnectWithTimeout("redis-17722.c124.us-central1-1.gce.redns.redis-cloud.com", 17722, timeout); // Redis-cloud
+	//redisContext* context = redisConnectWithTimeout("redis-17722.c124.us-central1-1.gce.redns.redis-cloud.com", 17722, timeout); // Redis-cloud
 	if (context == nullptr || context->err) {
 		if (context) {
 			std::cerr << "Error: " << context->errstr << std::endl;
@@ -89,7 +89,7 @@ int hiredisConnection(){
 		return 1;
 	}
 
-	redisReply* reply = (redisReply*)redisCommand(context, "AUTH %s", "speTwSQNDa6S14q3GiW262OgL1PtwxbJ");
+	/*redisReply* reply = (redisReply*)redisCommand(context, "AUTH %s", "speTwSQNDa6S14q3GiW262OgL1PtwxbJ");
 	if (reply == nullptr) {
 		std::cerr << "AUTH command failed" << std::endl;
 		redisFree(context);
@@ -98,8 +98,9 @@ int hiredisConnection(){
 	}
 	std::cout << "AUTH: " << reply->str << std::endl;
 	freeReplyObject(reply);
-	
-	reply = (redisReply*)redisCommand(context, "SET %s %s", "Marco", "Testing2");
+	*/
+
+	redisReply* reply = (redisReply*)redisCommand(context, "SET %s %s", "Marco", "Testing2");
 	if (reply == nullptr) {
 		std::cerr << "SET command failed" << std::endl;
 		redisFree(context);

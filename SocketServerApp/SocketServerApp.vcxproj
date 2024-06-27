@@ -40,7 +40,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>true</LinkIncremental>
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -53,14 +53,14 @@
       <PreprocessorDefinitions>WIN32;_CONSOLE;_LIB;_MBCS;%(PreprocessorDefinitions);_QUEUE;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <ExceptionHandling>Async</ExceptionHandling>
-      <AdditionalIncludeDirectories>C:\Dev\tools\vcpkg\installed\x86-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Dev\Visual Studio 2013\SocketsCPP\tools\redis;C:\Dev\Visual Studio 2013\SocketsCPP\tools\redis\src\;C:\Dev\Visual Studio 2013\SocketsCPP\tools\redis\src\Win32_Interop;C:\Dev\Visual Studio 2013\SocketsCPP\tools\vcpkg\installed\x86-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Dev\tools\vcpkg\installed\x86-windows\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LIBCMTD.lib;hiredis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Dev\Visual Studio 2013\SocketsCPP\tools\vcpkg\installed\x86-windows\lib;C:\Dev\Visual Studio 2013\SocketsCPP\tools\redis\msvs\Win32\Debug;C:\Dev\Visual Studio 2013\SocketsCPP\tools\redis\src\Win32_Interop\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LIBCMTD.lib;hiredis.lib;win32_interop.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib</IgnoreSpecificDefaultLibraries>
     </Link>
@@ -91,6 +91,7 @@
     <ClInclude Include="Logging.h" />
     <ClInclude Include="mutex.h" />
     <ClInclude Include="Queue.h" />
+    <ClInclude Include="Redis.h" />
     <ClInclude Include="SocketServerApp.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -98,6 +99,7 @@
   <ItemGroup>
     <ClCompile Include="ATMutex.cpp" />
     <ClCompile Include="Logging.cpp" />
+    <ClCompile Include="Redis.cpp" />
     <ClCompile Include="SocketServerApp.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
