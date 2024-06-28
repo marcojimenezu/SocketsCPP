@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Hiredis.Native</id>
+    <version>1.0.1</version>
+    <title>Hiredis.Native</title>
+    <authors>Marco</authors>
+    <owners>Marco</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Paquete NuGet para descargar y compilar Hiredis.</description>
+    <summary />
+    <tags>hiredis redis c++</tags>
+  </metadata>
+</package>

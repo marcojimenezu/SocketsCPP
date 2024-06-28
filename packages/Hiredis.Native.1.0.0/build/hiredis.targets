@@ -1,0 +1,17 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="BuildHiredis" BeforeTargets="Build">
+    <Exec Command="git clone https://github.com/redis/hiredis.git $(SolutionDir)hiredis" />
+    <Exec Command="cd $(SolutionDir)hiredis && make" />
+    <ItemGroup>
+      <NativeLib Include="$(SolutionDir)hiredis/libhiredis.a" />
+    </ItemGroup>
+  </Target>
+
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)hiredis/*.h" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <HiredisLibPath>$(SolutionDir)hiredis/libhiredis.a</HiredisLibPath>
+  </PropertyGroup>
+</Project>

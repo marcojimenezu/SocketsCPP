@@ -1,0 +1,140 @@
+﻿Build started 06/06/2024 11:40:13 a. m..
+     1>Project "C:\Dev\tools\redis\msvs\RedisServer.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Dev\tools\redis\msvs\..\deps\lua\src /IC:\Dev\tools\redis\msvs\..\deps\hiredis /I"C:\Dev\tools\redis\msvs\..\deps\jemalloc-win\include" /Zi /nologo /W3 /WX- /Od /Oy- /GL /D USE_JEMALLOC /D _OFF_T_DEFINED /D WIN32 /D LACKS_STDLIB_H /D _DEBUG /D _CONSOLE /D __x86_64__ /D _WIN32_WINNT=0x0501 /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc120.pdb" /Gd /TC /wd4996 /wd4146 /analyze- /errorReport:prompt ..\src\ae.c ..\src\hyperloglog.c ..\src\replication.c ..\src\sentinel.c ..\src\t_list.c ..\src\util.c
+         util.c
+     1>..\src\util.c(303): error C2275: 'uint32_t' : illegal use of this type as an expression
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdint.h(14) : see declaration of 'uint32_t'
+     1>..\src\util.c(303): error C2146: syntax error : missing ';' before identifier 'next'
+     1>..\src\util.c(303): error C2065: 'next' : undeclared identifier
+     1>..\src\util.c(304): error C2065: 'next' : undeclared identifier
+     1>..\src\util.c(305): error C2065: 'next' : undeclared identifier
+     1>..\src\util.c(309): error C2065: 'next' : undeclared identifier
+     1>..\src\util.c(310): error C2065: 'next' : undeclared identifier
+     1>..\src\util.c(311): error C2065: 'next' : undeclared identifier
+     1>..\src\util.c(316): error C2065: 'next' : undeclared identifier
+     1>..\src\util.c(319): error C2065: 'next' : undeclared identifier
+     1>..\src\util.c(320): error C2065: 'next' : undeclared identifier
+         t_list.c
+     1>..\src\t_list.c(415): error C2275: 'PORT_LONG' : illegal use of this type as an expression
+                 c:\dev\tools\redis\src\win32_interop\win32_types_hiredis.h(45) : see declaration of 'PORT_LONG'
+     1>..\src\t_list.c(415): error C2146: syntax error : missing ';' before identifier 'index'
+     1>..\src\t_list.c(415): error C2065: 'index' : undeclared identifier
+     1>..\src\t_list.c(418): error C2065: 'index' : undeclared identifier
+     1>..\src\t_list.c(426): error C2065: 'index' : undeclared identifier
+     1>..\src\t_list.c(439): error C2065: 'index' : undeclared identifier
+     1>..\src\t_list.c(454): error C2275: 'PORT_LONG' : illegal use of this type as an expression
+                 c:\dev\tools\redis\src\win32_interop\win32_types_hiredis.h(45) : see declaration of 'PORT_LONG'
+     1>..\src\t_list.c(454): error C2146: syntax error : missing ';' before identifier 'index'
+     1>..\src\t_list.c(454): error C2065: 'index' : undeclared identifier
+     1>..\src\t_list.c(457): error C2065: 'index' : undeclared identifier
+     1>..\src\t_list.c(463): error C2065: 'index' : undeclared identifier
+     1>..\src\t_list.c(477): error C2065: 'index' : undeclared identifier
+     1>..\src\t_list.c(498): error C2275: 'robj' : illegal use of this type as an expression
+                 c:\dev\tools\redis\src\redis.h(443) : see declaration of 'robj'
+     1>..\src\t_list.c(498): error C2065: 'value' : undeclared identifier
+     1>..\src\t_list.c(499): error C2065: 'value' : undeclared identifier
+     1>..\src\t_list.c(499): warning C4047: '==' : 'int' differs in levels of indirection from 'void *'
+     1>..\src\t_list.c(504): error C2065: 'value' : undeclared identifier
+     1>..\src\t_list.c(504): warning C4047: 'function' : 'robj *' differs in levels of indirection from 'int'
+     1>..\src\t_list.c(504): warning C4024: 'addReplyBulk' : different types for formal and actual parameter 2
+     1>..\src\t_list.c(505): error C2065: 'value' : undeclared identifier
+     1>..\src\t_list.c(505): warning C4047: 'function' : 'robj *' differs in levels of indirection from 'int'
+     1>..\src\t_list.c(505): warning C4024: 'decrRefCount' : different types for formal and actual parameter 1
+     1>..\src\t_list.c(659): error C2275: 'listTypeIterator' : illegal use of this type as an expression
+                 c:\dev\tools\redis\src\redis.h(987) : see declaration of 'listTypeIterator'
+     1>..\src\t_list.c(659): error C2065: 'li' : undeclared identifier
+     1>..\src\t_list.c(662): error C2065: 'li' : undeclared identifier
+     1>..\src\t_list.c(662): warning C4047: '=' : 'int' differs in levels of indirection from 'listTypeIterator *'
+     1>..\src\t_list.c(664): error C2065: 'li' : undeclared identifier
+     1>..\src\t_list.c(664): warning C4047: '=' : 'int' differs in levels of indirection from 'listTypeIterator *'
+     1>..\src\t_list.c(667): error C2065: 'li' : undeclared identifier
+     1>..\src\t_list.c(667): warning C4047: 'function' : 'listTypeIterator *' differs in levels of indirection from 'int'
+     1>..\src\t_list.c(667): warning C4024: 'listTypeNext' : different types for formal and actual parameter 1
+     1>..\src\t_list.c(675): error C2065: 'li' : undeclared identifier
+     1>..\src\t_list.c(675): warning C4047: 'function' : 'listTypeIterator *' differs in levels of indirection from 'int'
+     1>..\src\t_list.c(675): warning C4024: 'listTypeReleaseIterator' : different types for formal and actual parameter 1
+     1>..\src\t_list.c(1098): error C2275: 'robj' : illegal use of this type as an expression
+                 c:\dev\tools\redis\src\redis.h(443) : see declaration of 'robj'
+     1>..\src\t_list.c(1098): error C2065: 'key' : undeclared identifier
+     1>..\src\t_list.c(1100): error C2065: 'key' : undeclared identifier
+     1>..\src\t_list.c(1100): warning C4047: '==' : 'int' differs in levels of indirection from 'void *'
+     1>..\src\t_list.c(1110): error C2065: 'key' : undeclared identifier
+     1>..\src\t_list.c(1110): error C2223: left of '->type' must point to struct/union
+     1>..\src\t_list.c(1115): error C2065: 'key' : undeclared identifier
+     1>..\src\t_list.c(1115): warning C4047: 'function' : 'robj *' differs in levels of indirection from 'int'
+     1>..\src\t_list.c(1115): warning C4024: 'listTypeLength' : different types for formal and actual parameter 1
+     1>..\src\t_list.c(1115): warning C4024: '_redisAssertWithInfo' : different types for formal and actual parameter 2
+         sentinel.c
+     1>..\src\sentinel.c(3016): error C2275: 'sds' : illegal use of this type as an expression
+                 c:\dev\tools\redis\src\sds.h(43) : see declaration of 'sds'
+     1>..\src\sentinel.c(3016): error C2146: syntax error : missing ';' before identifier 'serversection'
+     1>..\src\sentinel.c(3016): error C2065: 'serversection' : undeclared identifier
+     1>..\src\sentinel.c(3016): warning C4047: '=' : 'int' differs in levels of indirection from 'sds'
+     1>..\src\sentinel.c(3017): error C2065: 'serversection' : undeclared identifier
+     1>..\src\sentinel.c(3017): warning C4022: 'sdscatlen' : pointer mismatch for actual parameter 2
+     1>..\src\sentinel.c(3017): warning C4047: 'function' : 'const sds' differs in levels of indirection from 'int'
+     1>..\src\sentinel.c(3017): warning C4024: 'sdslen' : different types for formal and actual parameter 1
+     1>..\src\sentinel.c(3018): error C2065: 'serversection' : undeclared identifier
+     1>..\src\sentinel.c(3018): warning C4047: 'function' : 'sds' differs in levels of indirection from 'int'
+     1>..\src\sentinel.c(3018): warning C4024: 'sdsfree' : different types for formal and actual parameter 1
+         replication.c
+     1>..\src\replication.c(78): warning C4244: 'function' : conversion from 'PORT_LONGLONG' to 'size_t', possible loss of data
+     1>..\src\replication.c(112): warning C4244: 'function' : conversion from 'PORT_LONGLONG' to 'size_t', possible loss of data
+     1>..\src\replication.c(138): warning C4244: 'initializing' : conversion from 'PORT_LONGLONG' to 'size_t', possible loss of data
+     1>..\src\replication.c(351): warning C4244: 'function' : conversion from 'PORT_LONGLONG' to 'size_t', possible loss of data
+     1>..\src\replication.c(1141): warning C4244: '=' : conversion from 'off_t' to 'ssize_t', possible loss of data
+     1>..\src\replication.c(2374): error C2275: 'listIter' : illegal use of this type as an expression
+                 c:\dev\tools\redis\src\adlist.h(48) : see declaration of 'listIter'
+     1>..\src\replication.c(2374): error C2146: syntax error : missing ';' before identifier 'li'
+     1>..\src\replication.c(2374): error C2065: 'li' : undeclared identifier
+     1>..\src\replication.c(2392): error C2065: 'li' : undeclared identifier
+     1>..\src\replication.c(2392): warning C4133: 'function' : incompatible types - from 'int *' to 'listIter *'
+     1>..\src\replication.c(2393): error C2065: 'li' : undeclared identifier
+     1>..\src\replication.c(2393): warning C4133: 'function' : incompatible types - from 'int *' to 'listIter *'
+         hyperloglog.c
+     1>..\src\hyperloglog.c(1495): error C2275: 'uint8_t' : illegal use of this type as an expression
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdint.h(12) : see declaration of 'uint8_t'
+     1>..\src\hyperloglog.c(1495): error C2065: 'p' : undeclared identifier
+     1>..\src\hyperloglog.c(1495): error C2065: 'end' : undeclared identifier
+     1>..\src\hyperloglog.c(1495): error C2100: illegal indirection
+     1>..\src\hyperloglog.c(1503): error C2065: 'p' : undeclared identifier
+     1>..\src\hyperloglog.c(1504): error C2065: 'p' : undeclared identifier
+     1>..\src\hyperloglog.c(1504): error C2065: 'end' : undeclared identifier
+     1>..\src\hyperloglog.c(1507): error C2065: 'p' : undeclared identifier
+     1>..\src\hyperloglog.c(1507): error C2100: illegal indirection
+     1>..\src\hyperloglog.c(1508): error C2065: 'p' : undeclared identifier
+     1>..\src\hyperloglog.c(1508): error C2100: illegal indirection
+     1>..\src\hyperloglog.c(1509): error C2065: 'p' : undeclared identifier
+     1>..\src\hyperloglog.c(1511): error C2065: 'p' : undeclared identifier
+     1>..\src\hyperloglog.c(1511): error C2100: illegal indirection
+     1>..\src\hyperloglog.c(1512): error C2065: 'p' : undeclared identifier
+     1>..\src\hyperloglog.c(1512): error C2100: illegal indirection
+     1>..\src\hyperloglog.c(1513): error C2065: 'p' : undeclared identifier
+     1>..\src\hyperloglog.c(1516): error C2065: 'p' : undeclared identifier
+     1>..\src\hyperloglog.c(1516): error C2100: illegal indirection
+     1>..\src\hyperloglog.c(1517): error C2065: 'p' : undeclared identifier
+     1>..\src\hyperloglog.c(1517): error C2100: illegal indirection
+     1>..\src\hyperloglog.c(1518): error C2065: 'p' : undeclared identifier
+         ae.c
+     1>..\src\ae.c(169): error C2275: 'aeFileEvent' : illegal use of this type as an expression
+                 c:\dev\tools\redis\src\ae.h(67) : see declaration of 'aeFileEvent'
+     1>..\src\ae.c(169): error C2065: 'fe' : undeclared identifier
+     1>..\src\ae.c(170): error C2065: 'fe' : undeclared identifier
+     1>..\src\ae.c(170): error C2223: left of '->mask' must point to struct/union
+     1>..\src\ae.c(173): error C2065: 'fe' : undeclared identifier
+     1>..\src\ae.c(173): error C2223: left of '->mask' must point to struct/union
+     1>..\src\ae.c(174): error C2065: 'fe' : undeclared identifier
+     1>..\src\ae.c(174): error C2223: left of '->mask' must point to struct/union
+     1>..\src\ae.c(186): error C2275: 'aeFileEvent' : illegal use of this type as an expression
+                 c:\dev\tools\redis\src\ae.h(67) : see declaration of 'aeFileEvent'
+     1>..\src\ae.c(186): error C2065: 'fe' : undeclared identifier
+     1>..\src\ae.c(188): error C2065: 'fe' : undeclared identifier
+     1>..\src\ae.c(188): error C2223: left of '->mask' must point to struct/union
+     1>..\src\ae.c(188): warning C4033: 'aeGetFileEvents' must return a value
+     1>..\src\ae.c(198): warning C4244: '=' : conversion from '__time64_t' to 'PORT_LONG', possible loss of data
+     1>Done Building Project "C:\Dev\tools\redis\msvs\RedisServer.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.15

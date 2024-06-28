@@ -1,0 +1,74 @@
+﻿Build started 06/06/2024 11:31:46 a. m..
+     1>Project "C:\Dev\tools\redis\src\Win32_Interop\Win32_Interop.vcxproj" on node 2 (Rebuild target(s)).
+     1>CustomBuild:
+         Performing Custom Build Tools
+         A subdirectory or file resources already exists.
+         MC: Compiling EventLog.mc
+         Microsoft (R) Windows (R) Resource Compiler Version 6.3.9600.16384
+         
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         
+         Microsoft (R) Incremental Linker Version 12.00.21005.1
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+     1>LINK : warning LNK4068: /MACHINE not specified; defaulting to X86
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\Dev\tools\redis\src\Win32_Interop\..\..\deps\lua\src /I"C:\Dev\tools\redis\src\Win32_Interop\..\..\deps\jemalloc-win\include" /Zi /nologo /W3 /WX- /Od /D USE_STATIC /D USE_JEMALLOC /D _OFF_T_DEFINED /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /D LACKS_STDLIB_H /D _CRT_SECURE_NO_WARNINGS /D PSAPI_VERSION=1 /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TC /errorReport:prompt win32fixes.c Win32_ANSI.c Win32_APIs.c Win32_dlmalloc.c Win32_Error.c Win32_PThread.c Win32_QFork_impl.c Win32_RedisLog.c Win32_Signal_Process.c Win32_ThreadControl.c Win32_Time.c win32_wsiocp.c
+         win32_wsiocp.c
+         Win32_Time.c
+         Win32_ThreadControl.c
+         Win32_Signal_Process.c
+         Win32_RedisLog.c
+         Win32_QFork_impl.c
+         Win32_PThread.c
+         Win32_Error.c
+         Win32_dlmalloc.c
+         Win32_APIs.c
+         Win32_ANSI.c
+         win32fixes.c
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\Dev\tools\redis\src\Win32_Interop\..\..\deps\lua\src /I"C:\Dev\tools\redis\src\Win32_Interop\..\..\deps\jemalloc-win\include" /Zi /nologo /W3 /WX- /Od /D USE_STATIC /D USE_JEMALLOC /D _OFF_T_DEFINED /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /D LACKS_STDLIB_H /D _CRT_SECURE_NO_WARNINGS /D PSAPI_VERSION=1 /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt Win32_CommandLine.cpp Win32_Common.cpp Win32_EventLog.cpp Win32_FDAPI.cpp Win32_fdapi_crt.cpp Win32_QFork.cpp win32_rfdmap.cpp Win32_service.cpp Win32_StackTrace.cpp Win32_variadicFunctor.cpp
+         Win32_variadicFunctor.cpp
+         Win32_StackTrace.cpp
+         Win32_service.cpp
+         win32_rfdmap.cpp
+         Win32_QFork.cpp
+         Win32_fdapi_crt.cpp
+         Win32_FDAPI.cpp
+         Win32_EventLog.cpp
+         Win32_Common.cpp
+         Win32_CommandLine.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string(232): warning C4244: 'initializing' : conversion from '__int64' to 'long', possible loss of data
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string(249): warning C4244: 'initializing' : conversion from '__int64' to 'long', possible loss of data
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string(266): warning C4244: 'initializing' : conversion from 'unsigned __int64' to 'unsigned long', possible loss of data
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Dev\tools\redis\msvs\x64\Debug\Win32_Interop.lib" DbgHelp.lib /NOLOGO /NODEFAULTLIB:MSVCRT /MACHINE:X64 /MACHINE:X64 x64\Debug\win32fixes.obj
+         x64\Debug\Win32_ANSI.obj
+         x64\Debug\Win32_APIs.obj
+         x64\Debug\Win32_CommandLine.obj
+         x64\Debug\Win32_Common.obj
+         x64\Debug\Win32_dlmalloc.obj
+         x64\Debug\Win32_Error.obj
+         x64\Debug\Win32_EventLog.obj
+         x64\Debug\Win32_FDAPI.obj
+         x64\Debug\Win32_fdapi_crt.obj
+         x64\Debug\Win32_PThread.obj
+         x64\Debug\Win32_QFork.obj
+         x64\Debug\Win32_QFork_impl.obj
+         x64\Debug\Win32_RedisLog.obj
+         x64\Debug\win32_rfdmap.obj
+         x64\Debug\Win32_service.obj
+         x64\Debug\Win32_Signal_Process.obj
+         x64\Debug\Win32_StackTrace.obj
+         x64\Debug\Win32_ThreadControl.obj
+         x64\Debug\Win32_Time.obj
+         x64\Debug\Win32_variadicFunctor.obj
+         x64\Debug\win32_wsiocp.obj
+         Win32_Interop.vcxproj -> C:\Dev\tools\redis\msvs\x64\Debug\Win32_Interop.lib
+     1>Done Building Project "C:\Dev\tools\redis\src\Win32_Interop\Win32_Interop.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.78

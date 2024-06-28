@@ -53,13 +53,13 @@
       <PreprocessorDefinitions>WIN32;_CONSOLE;_LIB;_MBCS;%(PreprocessorDefinitions);_QUEUE;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <ExceptionHandling>Async</ExceptionHandling>
-      <AdditionalIncludeDirectories>C:\Dev\Visual Studio 2013\SocketsCPP\tools\redis;C:\Dev\Visual Studio 2013\SocketsCPP\tools\redis\src\;C:\Dev\Visual Studio 2013\SocketsCPP\tools\redis\src\Win32_Interop;C:\Dev\Visual Studio 2013\SocketsCPP\tools\vcpkg\installed\x86-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Dev\Visual Studio 2013\SocketsCPP\SocketServerApp\Hiredis\;C:\Dev\Visual Studio 2013\SocketsCPP\SocketServerApp\Hiredis\src;C:\Dev\Visual Studio 2013\SocketsCPP\SocketServerApp\Hiredis\src\Win32_Interop;C:\Dev\Visual Studio 2013\SocketsCPP\SocketServerApp\Hiredis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Dev\Visual Studio 2013\SocketsCPP\tools\vcpkg\installed\x86-windows\lib;C:\Dev\Visual Studio 2013\SocketsCPP\tools\redis\msvs\Win32\Debug;C:\Dev\Visual Studio 2013\SocketsCPP\tools\redis\src\Win32_Interop\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Dev\Visual Studio 2013\SocketsCPP\SocketServerApp\Hiredis\lib;C:\Dev\Visual Studio 2013\SocketsCPP\SocketServerApp\Hiredis\Debug;C:\Dev\Visual Studio 2013\SocketsCPP\SocketServerApp\Hiredis\src\Win32_Interop\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>LIBCMTD.lib;hiredis.lib;win32_interop.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib</IgnoreSpecificDefaultLibraries>

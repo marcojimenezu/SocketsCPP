@@ -1,0 +1,23 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="Exec" AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll" />
+  
+  <Target Name="BuildHiredis" BeforeTargets="Build" Condition="'$(Configuration)' == 'Debug' Or '$(Configuration)' == 'Release'">
+    <Message Text="Cloning Hiredis repository..." Importance="high" />
+    <Exec Command="git clone https://github.com/redis/hiredis.git $(MSBuildProjectDirectory)\hiredis" />
+    
+    <Message Text="Building Hiredis..." Importance="high" />
+    <Exec Command="make -C $(MSBuildProjectDirectory)\hiredis" />
+
+    <ItemGroup>
+      <NativeLib Include="$(MSBuildProjectDirectory)\hiredis\libhiredis.a" />
+    </ItemGroup>
+  </Target>
+
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildProjectDirectory)\hiredis\*.h" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <HiredisLibPath>$(MSBuildProjectDirectory)\hiredis\libhiredis.a</HiredisLibPath>
+  </PropertyGroup>
+</Project>
